@@ -45,6 +45,9 @@ namespace JogarDados1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,49 +67,46 @@ namespace JogarDados1
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton1.Location = new System.Drawing.Point(6, 43);
+            this.radioButton1.Location = new System.Drawing.Point(6, 68);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(31, 19);
             this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "6";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 68);
+            this.radioButton2.Location = new System.Drawing.Point(6, 93);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(37, 19);
             this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "10";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 93);
+            this.radioButton3.Location = new System.Drawing.Point(6, 118);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(37, 19);
             this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "20";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(6, 118);
+            this.radioButton4.Location = new System.Drawing.Point(6, 143);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(43, 19);
             this.radioButton4.TabIndex = 2;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "100";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.radioButton5);
             this.groupBox1.Controls.Add(this.radioButton4);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton3);
@@ -114,7 +114,7 @@ namespace JogarDados1
             this.groupBox1.Location = new System.Drawing.Point(374, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(103, 142);
+            this.groupBox1.Size = new System.Drawing.Size(103, 173);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Numero de Lados";
@@ -215,6 +215,39 @@ namespace JogarDados1
             this.label5.Text = "Resultado";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.radioButton5.Location = new System.Drawing.Point(6, 43);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(31, 19);
+            this.radioButton5.TabIndex = 3;
+            this.radioButton5.Text = "4";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // listBox4
+            // 
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.HorizontalScrollbar = true;
+            this.listBox4.ItemHeight = 15;
+            this.listBox4.Location = new System.Drawing.Point(589, 27);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(173, 214);
+            this.listBox4.TabIndex = 5;
+            this.listBox4.UseTabStops = false;
+            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(638, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 15);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "DADO 4 LADOS";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -224,9 +257,11 @@ namespace JogarDados1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox100);
             this.Controls.Add(this.listBox20);
+            this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox10);
             this.Controls.Add(this.listBox6);
             this.Controls.Add(this.textBox1);
@@ -258,6 +293,9 @@ namespace JogarDados1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.Label label6;
     }
 }
 

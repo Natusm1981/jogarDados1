@@ -12,6 +12,7 @@ namespace JogarDados1
 {
     public partial class Form1 : Form
     {
+        public List<string> dado4 = new List<string>();
         public List<string> dado6 = new List<string>();
         public List<string> dado10 = new List<string>();
         public List<string> dado20 = new List<string>();
@@ -44,6 +45,13 @@ namespace JogarDados1
                  
             switch(qualDado)
             {
+                case "4":
+                    dado4.Add(result + " ---- " + DateTime.Now);
+                    dado4.Reverse();
+                    listBox4.DataSource = null;
+                    listBox4.DataSource = dado4;
+                    dado6.Reverse();
+                    break;
                 case "6":                    
                     dado6.Add(result + " ---- " + DateTime.Now);
                     dado6.Reverse();
@@ -87,6 +95,11 @@ namespace JogarDados1
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
