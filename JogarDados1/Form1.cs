@@ -30,10 +30,8 @@ namespace JogarDados1
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
-            //RadioButton rb = new RadioButton();
             string result = "";
             string qualDado = "";
-            //Dado dado = new Dado();
             foreach (RadioButton rb in groupBox1.Controls)
             {
                 if (rb.Checked)
