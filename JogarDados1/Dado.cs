@@ -22,9 +22,9 @@ namespace JogarDados1
             Random random = new Random();
             
             
-            int result = random.Next(1, (lado + 1));
+            //int result = random.Next(1, (lado + 1));
 
-            return result.ToString();
+            return random.Next(1, (lado + 1)).ToString();
         }
 
 
